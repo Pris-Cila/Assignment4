@@ -1,0 +1,50 @@
+
+<form action ="/insertUser" method="post">
+    <h1> <%=val%> </h1>
+
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type = "text" placeholder="Email" name="email" id = "email" required/>
+
+    <label for="pwd"><b>Password</b></label>
+    <input type = "password" placeholder="Password" name="pwd" id = "pwd" required/>
+
+    <!-- <label for="cpwd"><b>Password</b></label>
+    <input type = "password" placeholder="Confirm Password" name="cpwd" id="cpwd" required/> -->
+
+    <hr>
+
+    <button type = "text" onclick= "MatchPassword(form)" >Register</button>
+</form>
+
+
+<!-- <script>
+
+    function MatchPassword(form){
+        password1 = form.pwd.value;
+        password2 = form.cpwd.value;
+
+        // If password not entered
+        if (password1 == '')
+            alert ("Please enter Password");
+                
+        // If confirm password not entered
+        else if (password2 == '')
+            alert ("Please enter confirm password");
+                
+        // If Not same return False.    
+        else if (password1 != password2) {
+            alert ("\nPassword did not match: Please try again...")
+            return false;
+        }
+
+        // If same return True.
+        else{
+            alert("Password Match: Welcome to GeeksforGeeks!")
+            return true;
+        }
+    }
+    
+    </script> -->
+    
